@@ -15,9 +15,8 @@ public class RunGame {
 			System.out.println("Round " + (i + 1) + ":");
 			g.play();
 		}
-		System.out.println("---------------------------------------");
-		System.out.println("Final Scores:");
-		System.out.println(g.scoreString());
+		String finalScores = "Final Scores:\n" + g.scoreString();
+		g.log(finalScores);
 	}
 	public static void runRandomGame(int iter) {
 	
